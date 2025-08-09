@@ -43,7 +43,7 @@
   },
 
   // Run commands after the container is created
-  "postCreateCommand": "npm install -g codex-cli && echo '✅ Codex CLI installed successfully!' && codex --version",
+  "postCreateCommand": "npm install -g codex-cli && echo '✅ Codex CLI installed successfully!' && codex --help >/dev/null",
   
   // Configure tool-specific properties
   "customizations": {
