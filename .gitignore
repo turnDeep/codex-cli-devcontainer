@@ -9,12 +9,12 @@
 credentials.json
 service-account.json
 
-# Gemini CLI
-.gemini/tmp/
-.gemini/cache/
-.gemini/history/
-.gemini/shell_history
-.gemini/memory.json
+# Codex CLI
+.codex/tmp/
+.codex/cache/
+.codex/history/
+.codex/shell_history
+.codex/memory.json
 
 # Node.js
 node_modules/
