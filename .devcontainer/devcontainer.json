@@ -1,6 +1,8 @@
 {
   "name": "Codex CLI Development Container",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
 
   // Features to add to the dev container
   "features": {
@@ -43,7 +45,7 @@
   },
 
   // Run commands after the container is created
-  "postCreateCommand": "npm install -g codex-cli && echo '✅ Codex CLI installed successfully!' && codex --help >/dev/null",
+  "postCreateCommand": "echo '✅ Codex CLI ready!' && codex --help >/dev/null",
   
   // Configure tool-specific properties
   "customizations": {
