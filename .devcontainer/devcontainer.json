@@ -100,7 +100,7 @@
     "--cap-add=SYS_PTRACE",
     "--security-opt",
     "seccomp=unconfined",
-    "--network=host"
+    // Default Docker networking allows the CLI to handle OAuth callbacks
   ],
 
   // Uncomment to connect as root instead

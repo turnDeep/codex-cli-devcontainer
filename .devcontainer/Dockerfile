@@ -24,7 +24,7 @@ RUN mkdir -p /home/node/.codex \
 
 # Install Codex CLI globally and strip noisy legacy warnings
 RUN npm install -g codex-cli \
-    && sed -i "/Failed to load c\+\+ bson extension/d" $(npm root -g)/codex-cli/node_modules/bson/ext/index.js
+    && sed -i '/Failed to load c++ bson extension/d' $(npm root -g)/codex-cli/node_modules/bson/ext/index.js
 
 # Create a startup script
 RUN echo '#!/bin/bash\n\
